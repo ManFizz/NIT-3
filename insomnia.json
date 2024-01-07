@@ -1,0 +1,257 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-11-24T08:18:12.438Z",
+  "__export_source": "insomnia.desktop.app:v8.4.5",
+  "resources": [
+    {
+      "_id": "req_69387cd86c534e3f90ed0a4a46e42076",
+      "parentId": "wrk_8f61545554614039868391f8112d402a",
+      "modified": 1700813776612,
+      "created": 1700813427622,
+      "url": "http://0.0.0.0:8080/auth/realms/master/protocol/openid-connect/token",
+      "name": "Get token by pass",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/x-www-form-urlencoded",
+        "params": [
+          {
+            "id": "pair_bde8423f9c784cc2872ab10544c52c33",
+            "name": "grant_type",
+            "value": "password",
+            "description": ""
+          },
+          {
+            "id": "pair_d11ad554658f428c939daf1f3c018635",
+            "name": "client_id",
+            "value": "vladimir",
+            "description": ""
+          },
+          {
+            "id": "pair_44830eabf0c444c0b985c1414dae1d4c",
+            "name": "client_secret",
+            "value": "sz6tQBqsGeBBcitjUhUFVqi7tYbcnrUK",
+            "description": ""
+          },
+          {
+            "id": "pair_11611b73c79242b6a7f23c1b0928ce27",
+            "name": "username",
+            "value": "testuser",
+            "description": ""
+          },
+          {
+            "id": "pair_78001a8573ba4436b38a8cede6ab4c30",
+            "name": "password",
+            "value": "Amogus77",
+            "description": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1700813427622,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_8f61545554614039868391f8112d402a",
+      "parentId": null,
+      "modified": 1700813031862,
+      "created": 1700813031862,
+      "name": "3lab",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_d9c800b767bb4a61a412557710fb9a8d",
+      "parentId": "wrk_8f61545554614039868391f8112d402a",
+      "modified": 1700813752921,
+      "created": 1700813377632,
+      "url": "http://0.0.0.0:8080/auth/realms/master/protocol/openid-connect/userinfo",
+      "name": "Get user",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJnWnFCamRUYzVMYVVtRnlrR09mZWx3N2xqek4wVUlsSUN4TzluR3BmaGpFIn0.eyJleHAiOjE3MDA4MTM3NTgsImlhdCI6MTcwMDgxMzY5OCwianRpIjoiYzVlMGZkZGItZWE2ZS00ZDBkLWFlYjMtYWJhMDgwOWI2YTBjIiwiaXNzIjoiaHR0cDovLzAuMC4wLjA6ODA4MC9hdXRoL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNDc1ODJkMzAtNWZjZC00ZTc3LWJhYzctZGNmNzgyNGNlMjM2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoidmxhZGltaXIiLCJzZXNzaW9uX3N0YXRlIjoiMWNhNjc0NjMtM2JjMC00NmZjLThmMGQtMGE3NzhlZTBmYmViIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJQcm9naW4iLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiIxY2E2NzQ2My0zYmMwLTQ2ZmMtOGYwZC0wYTc3OGVlMGZiZWIiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3R1c2VyIiwiZ2l2ZW5fbmFtZSI6IiIsImZhbWlseV9uYW1lIjoiIn0.HIIIU2MNmM-pu7nq2xq4-T9h7BXFMb2VFavJYXlA4Z8NE8PF2l1gxqpwZkpaSzdHHMzOYEFRu0UsdL1wfS9rnamqsbiPh3GpGKE4G_7KBVQRrh2TLkQ_7_31E9_GEfrW_O664IIjGOzQjyaXWhDOfD2zF9Iaf-Pl9_ZyRTT0UkvrQwj4DoBn5w1C4Jy_5z2c5cQKCLUSgoJ5wh1gKSPZeHW5YLkq35_NJa99PJ4MO3TC9y4Tatn2vSI3rabUouGtg-81dBvackojt3pVSFqPapPXmY7LpKirJgXvZKmuQGhfA7KFCTp7c3R6vnxrf9OR5RwbRz58KkxEVJy2kD3FJg"
+      },
+      "metaSortKey": -1700813377632,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b49f8843c9ca4aa2badce43e5ce9a939",
+      "parentId": "wrk_8f61545554614039868391f8112d402a",
+      "modified": 1700813821699,
+      "created": 1700813324865,
+      "url": "http://0.0.0.0:8080/auth/realms/master/protocol/openid-connect/token",
+      "name": "Get token by refresh",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/x-www-form-urlencoded",
+        "params": [
+          {
+            "id": "pair_162b574aca5a47d1af5a324407448de2",
+            "name": "grant_type",
+            "value": "refresh_token",
+            "description": ""
+          },
+          {
+            "id": "pair_59b10acb3ac94cec91554a26ea9433f1",
+            "name": "client_id",
+            "value": "vladimir",
+            "description": ""
+          },
+          {
+            "id": "pair_c3288b55222f4156b7056c9bb13cdd0e",
+            "name": "client_secret",
+            "value": "sz6tQBqsGeBBcitjUhUFVqi7tYbcnrUK",
+            "description": ""
+          },
+          {
+            "id": "pair_2711d38c2877476f998a2245aa6339f3",
+            "name": "refresh_token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwOGFhODEyNS1iMWNlLTQ3NDEtYTJiMy05YmY3Yzg0YjQ1NWYifQ.eyJleHAiOjE3MDA4MTU2MTIsImlhdCI6MTcwMDgxMzgxMiwianRpIjoiYTc3MWZmN2YtMDE3Ny00YzgwLWJlY2YtMDE1YWQyZGU4NGFiIiwiaXNzIjoiaHR0cDovLzAuMC4wLjA6ODA4MC9hdXRoL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwL2F1dGgvcmVhbG1zL21hc3RlciIsInN1YiI6IjQ3NTgyZDMwLTVmY2QtNGU3Ny1iYWM3LWRjZjc4MjRjZTIzNiIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJ2bGFkaW1pciIsInNlc3Npb25fc3RhdGUiOiJjNDk1ZjFiYS03ZDYyLTQ1OGUtOGIxOC03NDkzOGU3ZTg4NTAiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJzaWQiOiJjNDk1ZjFiYS03ZDYyLTQ1OGUtOGIxOC03NDkzOGU3ZTg4NTAifQ.JJQMlJWejmFqQls6Tf2NpspkV_4b4TgJltNr2USz0pc",
+            "description": ""
+          }
+        ]
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1700813324865,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_0ab198e3dff6414494f12ef8e296086a",
+      "parentId": "wrk_8f61545554614039868391f8112d402a",
+      "modified": 1700813774813,
+      "created": 1700813067867,
+      "url": "http://0.0.0.0:8080/auth/realms/master/.well-known/openid-configuration",
+      "name": "Get info realm",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.4.5"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1700813067867,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_013e85e7d2d73ba72a316f1527bf45831df58173",
+      "parentId": "wrk_8f61545554614039868391f8112d402a",
+      "modified": 1700813031865,
+      "created": 1700813031865,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1700813031865,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_013e85e7d2d73ba72a316f1527bf45831df58173",
+      "parentId": "wrk_8f61545554614039868391f8112d402a",
+      "modified": 1700813812063,
+      "created": 1700813031866,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "KEYCLOAK_LOCALE",
+          "expires": "1970-01-01T00:00:10.000Z",
+          "maxAge": 0,
+          "domain": "0.0.0.0",
+          "path": "/auth/realms/master/",
+          "httpOnly": true,
+          "extensions": [
+            "Version=1",
+            "Comment=Expiring cookie"
+          ],
+          "hostOnly": true,
+          "creation": "2023-11-24T08:14:58.471Z",
+          "lastAccessed": "2023-11-24T08:16:52.062Z",
+          "id": "a0a5cbab-9e9b-4de0-a02e-e306815cae90"
+        },
+        {
+          "key": "KC_RESTART",
+          "expires": "1970-01-01T00:00:10.000Z",
+          "maxAge": 0,
+          "domain": "0.0.0.0",
+          "path": "/auth/realms/master/",
+          "httpOnly": true,
+          "extensions": [
+            "Version=1"
+          ],
+          "hostOnly": true,
+          "creation": "2023-11-24T08:14:58.473Z",
+          "lastAccessed": "2023-11-24T08:16:52.062Z",
+          "id": "42479c3a-7812-4daa-9a9d-eb1326026aca"
+        }
+      ],
+      "_type": "cookie_jar"
+    }
+  ]
+}
